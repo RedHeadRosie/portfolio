@@ -6,54 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/newstyle.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="images/blackcat.ico" type="image/x-icon">
     <title>My Portfolio</title>
 </head>
 <body>
-    <header> 
-        <h1 class="feature">Hello! my name is Pip.<br>I'm a Web Developer</h1>
-        <a href="about">Find out more</a>
+    <button id="theme-switch">To Dark Mode</button>
+    <header class="neutral-theme"> 
+        <h1 class="feature">Hello! my name is Pip Matthews.<br>I'm a Web Developer.</h1>
+        <a href="about" class="header-link button">Find out more</a>
     </header>
     <main>
-        <section>
+        <section class="about primary-theme">
             <h2>About me</h2>
-            <div>
-                <img src="images/pip.JPG" class="photo" alt="a photopgraph of Pip. She is smiling and has long ginger hair. She is wearing a winter hat, a black jacket and a pink scarf. There is green woodland area in the background ">
-            </div>
-            <div>  
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="https://www.linkedin.com/in/philippa-matthews-323abb133/">My Resume</a>
+            <div class="about-container">  
+                <img src="images/pip.JPG" class="about-img" alt="a photopgraph of Pip. She is smiling and has long ginger hair. She is wearing a winter hat, a black jacket and a pink scarf. There is green woodland area in the background ">
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="https://www.linkedin.com/in/philippa-matthews-323abb133/" class="button">My Resume</a>
+                </div>
             </div>
             <blockquote>"Her attention to detail is great." 
                 <cite>- Kirby (Cat)</cite>
             </blockquote>
         </section>
-        <section>
+        <section class="neutral-theme">
             <h2>Projects</h2>
             <article>
-                <h3>Project Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">See it live</a>
-                <a href="#">Fork it on Github</a>
+                <div class="article-text">
+                    <h3>Project Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="button">See it live</a>
+                    <a href="#" class="button">Fork it on Github</a>
+                </div>
+                <img src="images/project.jpg" class="article-img" alt="an image of a crane to represent construction">
             </article>
         </section>
-        <section>
+        <section class="contact primary-theme">
             <h2>Contact</h2>
             <p>If you'd like to work with me, you can drop me a message!</p>
-            <a href="mailto:pip.matthews@gmail.com">Let's Talk</a>
+            <a href="mailto:pip.matthews@gmail.com" class="button">Let's Talk</a>
         </section>
     </main>
     <footer>
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/philippa-matthews-323abb133/">LinkedIn</a>
+        <ul class="social">
+            <li  class="social-item">
+                <a  class="social-link linkedin" href="https://www.linkedin.com/in/philippa-matthews-323abb133/">LinkedIn</a>
             </li>
-            <li>
-                <a href="https://twitter.com">Twitter</a>
+            <li  class="social-item"> 
+                <a  class="social-link twitter" href="https://twitter.com">Twitter</a>
             </li>
-            <li>
-                <a href="https://github.com/RedHeadRosie">GitHub</a>
+            <li  class="social-item">
+                <a class="social-link github" href="https://github.com/RedHeadRosie">GitHub</a>
             </li>
         </ul>
         <p>&copy; 2021 - Portfolio Design by Pip</p>
